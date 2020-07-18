@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost/loan/Authentication_files/bframe.html -->
+<html dir="ltr" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>reCAPTCHA</title>
+<style type="text/css">
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="./styles__ltr.css">
+<script nonce="" type="text/javascript">window['__recaptcha_api'] = 'https://www.google.com:443/recaptcha/';</script>
+<script type="text/javascript" src="./recaptcha__fr.js(1).téléchargement" nonce="">
+      
+    </script><script type="text/javascript" charset="UTF-8" src="./FDcAX_tKPNY5t89Q-dNJKWIeEpZ837mGxuNXrOdpSUg.js.téléchargement" nonce=""></script></head>
+<body><input type="hidden" id="recaptcha-token" value="03AGdBq27F-l4SlDVeCIGqj2liTBSsVqNFD6dIRgPx1j7OurueWjqwcc-0f3HRef0rlWVco6EC12IYLm8xytyV4B-Mbn61IgL4y-qqA9hBMjdCZpGmDhdSgy5uQHPOyv60Z4IRJSHHBNXUArXXv10Lh9lMeewUShwv5GU_4_y_R47CKOV4497C0xCxDqCf4C11p358WIc5H3oL779lfNPMr-BkX1g_-wtyaYGY2fgpFt61HXD3V9Uvgyg9KYdps-AjL2T5E2EbgCpetkxFW5M-h0-sHp_o94Ig-4JuWcQswNlBJzKrBqB13SPXAa7ej5iNBpqQd9RLZG5L3J_6y27jAXafYNvah7_z2UZKHam49-UlgGAYf7SHTccX630eN5JkHYv_zhAOZhYfRFHJrLoYZ1c6cCF1-vmB826dWCq26wG1zQSbqpwDjwCJamVePZrWf6IfMQVK9x5QJNAYtz9G56ApqFWgpRV81340r_hAxJ4pmf-ldbWpXzcL7pziuCq6m1-ejkgX8Ys955rB2sTzXhYeI7bNokwyHzOI2iIudCr0CIjWynSwpQ_3nH7OpTzJFBkgWnAQ70cb_r9wxhdraDSEO6C41jwb9rq252pVUQSgnsZeVEH__IrT0Iy8Ep6uWcukOs4O4qTyB-Kf8pdSMR10E8HqrYzQFc3NP9QuEw3gO-L2MatCAnqZs4oInguq36qlZrsltB10TJI5gqdgE6CfeqRJzfNNESQyKEjCbCsUgk-7BAooyKM3jmJjP_SeP35HQcrwQor7bQOkahwX5Sxw_V3cW1eDuc4LJn80eeXIRaFkT-Yt8dyJkL7qy4aVKWL015UJ3b4-bQcMKxBVkbm00mBxYGahGZo4xTgkzd3FG-cm7M13bvQ9fkYNIwULG219TDpaDdaJ_A7FydCu3yYB7ZOTLQzEsTYbuMO3LqE0NwX1kLP3NsdEScmm_NGCfybAwLNODDLdwSDMXCnPHhWlp5yGFazlnbjJGw746dAZOI-dyZn8uoC2BD01EmVt84OIrjm0msAxSefZ9IkIDxNwmy0wQVDv7otoJttHEXCz8Lo3hkBIvgS9RxJVqkNvm-679fGIa6A4FBI6DOpKDoiKq20LTBEjP744RuO4aABsNeRX1a7TQe_u_SNRMagvG32jZJOcMhyp_o7FOE8W6YqNICCpiGwKbUCdY1C3E_J2kwBE2ymPVTs7vB5cFXLOpX4ypENXe_FkfLyg4sPFmGI5ZrBg6pD4-7JAnR43DIeZ8oJXDUJU4yU4fUezKVN08pR_3HYtmPDZkWbGyR7bx8C6P5HsOF5xTaYQKBglGdRM1ger36bdxMJJiWC-Ny4tJifP4e_fXgIBCvDIca6JW7vc09OXNGhF-SlPHp4dtCutYcgAsIKesoXq3NgxI-75WTYId6FIDPwM22BLEwdeQ3v1CgpHJp63LIMS941esZ4YebFwVDk6eQ1FwX8BrVdcoLjCZDdAo6hoYjX1-ACZHr2gp97Of5wDdYMLxtRxflxMpA1txXf2C3HKNyo2apudHiE6CWaAfgH6IxkhqxAlwzadjOzP-IDtrsF8ajdgKdf91cTpZYnMA_X1LSiAKWci9xxOs-_GYrIL2Nhy8bddjwoULDTE7UBMZMXKZGXQPQkd2ywViAgEdQWJ4UXDIIpXJn278cML1Sx0pHGmyQrgw7PdeThePfKKHjFoYwJChCRKD0N6eJ42ECG7tL4TH7BdubYGAvY3r0KYlHnCtnxg7AfBYEeoTNGzrbFpAuICrIVXvj8Ym4d5BDehRCB2pckcYf2EYA5jrCsPgV32sK41EzRfWPYLBYvFsi9sV92_aAXaB5w4p-ZEuers_Hp27XCqrFrsK0hPnI2wrbnZs6WIrsWhyLiCvIQWO_cXWhoiaRGW5mLR9t-Wjy9tqi3p8A_yBbLuGAFk0muwuRPwUhbEz5Iimymvv3g1JATWHRmNlZGuSITZLr_IvFpO_4ENFNJUi99y4a8OlHnOl86m5mrg0wqwYhnsWIk_0YDnqXXE5Mc8By8XRa7Hf_BpsTS07EmZu8CZACxDC8EBeccD9dznBYiI-Zsr7cE8ie469dDx4tcDaXxEVnR_zobrtcMW4sUWj1XJExv9B7Uy">
+<script type="text/javascript" nonce="">
+      
+        recaptcha.frame.Main.init("[\x22finput\x22,null,[\x22conf\x22,null,\x226LehsaMUAAAAAJvbXRf0SaCOt3CJZBImdp7461pO\x22,0,null,null,0.75,null,[21]\n]\n]\n");
+      
+    </script><div></div><div style=""><div class="rc-footer"><div class="rc-separator"></div><div class="rc-controls"><div class="primary-controls"><div class="rc-buttons"><div class="button-holder reload-button-holder"><button class="rc-button goog-inline-block rc-button-reload" title="Générer un nouveau test" value="" id="recaptcha-reload-button" tabindex="0"></button></div><div class="button-holder audio-button-holder"><button class="rc-button goog-inline-block rc-button-audio" title="Générer un test audio" value="" id="recaptcha-audio-button" tabindex="0"></button></div><div class="button-holder image-button-holder"><button class="rc-button goog-inline-block rc-button-image" title="Générer un test visuel" value="" id="recaptcha-image-button" tabindex="0" style="display: none;"></button></div><div class="button-holder help-button-holder"><button class="rc-button goog-inline-block rc-button-help" title="Aide" value="" id="recaptcha-help-button" tabindex="0"></button></div><div class="button-holder undo-button-holder"><button class="rc-button goog-inline-block rc-button-undo" title="Annuler" value="" id="recaptcha-undo-button" tabindex="0" style="display: none;"></button></div></div><div class="verify-button-holder"><button class="rc-button-default goog-inline-block" title="" value="" id="recaptcha-verify-button" tabindex="0">Valider</button></div></div><div class="rc-challenge-help" style="display:none" tabindex="0"></div></div></div></div><iframe style="display: none;" src="./saved_resource(1).html"></iframe></body></html>
